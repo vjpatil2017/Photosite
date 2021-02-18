@@ -1,0 +1,22 @@
+
+<table class="table table-striped" style="width:100%">
+
+  <caption>There are <%= @user_all.count %> Users </caption>
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for us in @user_all %>
+    <tr>
+      <td> <%= us.id %></td>
+      <td> <%= us.first_name %></td>
+      <td><%= us.last_name %></td>
+    </tr>
+
+  <% end %>
+  </tbody>
+</table>
